@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<style>
+			.columns {
+				display: flex;
+				font-size: 2vmin!important;
+				line-height: 1.4!important;
+			}
+			.column {
+				flex: 0 1 20%;
+			}
+			[data-columns] {
+				-webkit-column-count: 2;
+			}
+		</style>
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section><h2>"New" features you can use TODAY</h2>
+						<div class="columns fragment">
+							<div class="column">
+								<h2>SVG</h2>
+								<ul>
+									<li><a href="//caniuse.com/svg">Basic SVG</a></li>
+									<li><a href="//caniuse.com/svg-html5">Inline SVG</a></li>
+									<li><a href="//caniuse.com/svg-html">SVG Effects on HTML objects</a></li>
+									<li><a href="//caniuse.com/svg-filters">SVG Filters</a></li>
+									<li><a href="//caniuse.com/svg-css">SVG Background images</a></li>
+									<li><a href="//caniuse.com/svg-img">SVG in img src</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h2>HTML</h2>
+								<ul>
+									<li><a href="//caniuse.com/contenteditable">Contenteditable</a></li>
+									<li><a href="//caniuse.com/input-placeholder">Input placeholder</a></li>
+									<li><a href="//caniuse.com/form-validation">Form Validation</a></li>
+									<li><a href="//caniuse.com/offline-apps">Offline access</a></li>
+									<li><a href="//caniuse.com/input-range">Range input</a></li>
+									<li><a href="//caniuse.com/iframe-sandbox">Iframe sandboxing</a></li>
+									<li><a href="//caniuse.com/contentsecuritypolicy">Content Security Policy</a></li>
+									<li><a href="//caniuse.com/history">Push/Popstate session history</a></li>
+									<li><a href="//caniuse.com/video">Audio/Video element</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h2>CSS</h2>
+								<ul>
+									<li><a href="//caniuse.com/calc">calc()</a></li>
+									<li><a href="//caniuse.com/css-gradients">CSS Gradients</a></li>
+									<li><a href="//caniuse.com/css-hyphens">Hyphenation</a></li>
+									<li><a href="//caniuse.com/transforms2d">CSS Transforms</a></li>
+									<li><a href="//caniuse.com/transforms3d">3d Transforms</a></li>
+									<li><a href="//caniuse.com/css-animation">CSS Animations</a></li>
+									<li><a href="//caniuse.com/border-image">Border-images (> IE10)</a></li>
+									<li><a href="//caniuse.com/border-radius">Border-radius</a></li>
+									<li><a href="//caniuse.com/css-boxshadow">Box-shadow</a></li>
+									<li><a href="//caniuse.com/css3-colors">HSL(a) RGB(a)</a></li>
+									<li><a href="//caniuse.com/multiplebackgrounds">Mulitple Backgrounds</a></li>
+									<li><a href="//caniuse.com/multicolumn">CSS columns -vendor-prefix</a></li>
+									<li><a href="//caniuse.com/css-sel3">nth-child, nth-of-type</a></li>
+									<li><a href="//caniuse.com/css-textshadow">Text-shadow</a></li>
+									<li><a href="//caniuse.com/css-transitions">CSS Transitions</a></li>
+									<li><a href="//caniuse.com/flexbox">Flex-box</a></li>
+									<li><a href="//caniuse.com/font-feature">Font feature settings</a></li>
+									<li><a href="//caniuse.com/rem">REM units</a></li>
+									<li><a href="//caniuse.com/viewport-unit">Viewport units</a></li>
+									<li><a href="//caniuse.com/css-selection">::selection</a></li>
+									<li><a href="//caniuse.com/pointer-events">pointer events ( > IE10)</a></li>
+									<li><a href="//caniuse.com/user-select-none">user-select: none</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h2>Javascript</h2>
+								<ul>
+									<li><a href="//caniuse.com/webworkers">Web Workers</a></li>
+									<li><a href="//caniuse.com/websockets">Web Sockets</a></li>
+									<li><a href="//caniuse.com/typedarrays">Typed Arrays</a></li>
+									<li><a href="//caniuse.com/requestanimationframe">requestAnimationFrame</a></li>
+									<li><a href="//caniuse.com/pagevisibility">pageVisibility</a></li>
+									<li><a href="//caniuse.com/nav-timing">Navigation Timing</a></li>
+									<li><a href="//caniuse.com/matchmedia">matchMedia</a></li>
+									<li><a href="//caniuse.com/matchesselector">matches()</a></li>
+									<li><a href="//caniuse.com/Indexeddb">IndexedDB</a></li>
+									<li><a href="//caniuse.com/geolocation">Geolocation</a></li>
+									<li><a href="//caniuse.com/fullscreen">Fullscreen API ( > IE 10)</a></li>
+									<li><a href="//caniuse.com/filereader">FileReader API</a></li>
+									<li><a href="//caniuse.com/fileapi">File API</a></li>
+									<li><a href="//caniuse.com/bloburls">Blob URLs</a></li>
+									<li><a href="//caniuse.com/blobbuilder">Blob constructing</a></li>
+								</ul>
+							</div>
+							<div class="column">
+								<h2>DOM</h2>
+								<ul>
+									<li><a href="//caniuse.com/getelementsbyclassname">getElementsByClassname</a></li>
+									<li><a href="//caniuse.com/getcomputedstyle">getComputedStyle</a></li>
+									<li><a href="//caniuse.com/script-defer">script defer</a></li>
+									<li><a href="//caniuse.com/script-async">script async</a></li>
+									<li><a href="//caniuse.com/xhr2">XMLHttpRequest 2</a></li>
+									<li><a href="//caniuse.com/classlist">ClassList</a></li>
+									<li><a href="//caniuse.com/mutationobserver">Mutation Observer (> IE 10)</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>SVG</h2>
+						<ul>
+							<li class="fragment">Mobile Friendly</li>
+							<li class="fragment">Bandwidth Friendly</li>
+							<li class="fragment">Retina Friendly</li>
+							<li class="fragment">Animation Friendly</li>
+						</ul>
+						<figure class="fragment">
+						<p data-height="340" data-theme-id="0" data-slug-hash="vmdBo" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/uniqname/pen/vmdBo'>Audio Player</a> by Cory (<a href='http://codepen.io/uniqname'>@uniqname</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//codepen.io/assets/embed/ei.js"></script>
+						</figure>
+					</section>
+					<section data-state="html">
+						<h2>HTML</h2>
+						<ul>
+							<li>Contenteditable</li>
+							<li>Input placeholder</li>
+							<li>Form Validation (<input id="validation" type="email" />) 
+							<style> 
+							.html style[contenteditable] { display: inline-block; font: .5em/1 monospace; padding: 1em; background: #333;} 
+							.html input { font-size: 1em; outline: none; border: none; background: #999; border-radius: .25em; padding: .25em; transition: .25s all;}
+							</style>
+							<style contenteditable>
+							.html input { background-color: red; color: #fff;} 							}
+							</style> </li>
+							</code></pre>
+							<li>Offline access (cache manifest)</li>
+							<li>Range input (<input id="validation" type="range" min="5" max="10" />) </li>
+							<li>Iframe sandboxing</li>
+							<li>Content Security Policy</li>
+							<li>Pushstate/Popstate session history (<small><a id="pushstate" href="/pushed/">Pushed URL</a> | <a id="reset-pushstate" href="../">Back</a></small>)</li>
+							<script>
+								document.addEventListener('click', function (e) {
+									if (e.target.id === 'pushstate') {
+										e.preventDefault();
+										history.pushState({}, 'Pushed URL', e.target.getAttribute('href'));
+									} else if (e.target.id === 'reset-pushstate') {
+										e.preventDefault();
+										history.back();
+									}
+								});
+							</script>
+							<li>Audio/Video element</li>
+						</ul>
+					</section>
+					<section data-state="css">
+						<style>
+							.css body,
+							.css .present:after { background-color: hsl(34, 53%, 82%);
+									background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,                  
+									  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+									  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+									  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+									  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+									  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px       
+									  ),
+									repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px, 
+									  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+									  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
+									  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+									  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+									  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px       
+									);}
+						</style>
+						<style scoped>
+							summary { display: inline-block; }
+							summary::-webkit-details-marker { display: none; }
+							details ^ #details-content { display: inline-block; }
+							section:before, section:after {
+								position: absolute; top:0; bottom: 0; left: 0; right: 0; content: ''; z-index: -1;
+							}
+							section { text-shadow: 1px 1px 2px #333;}
+							section:before { background: hsl(34, 53%, 82%); }
+							section:after { -webkit-filter: blur(20px); }
+						</style>
+						<h2>CSS</h2>
+						<ul>
+							<li><details><summary>calc()</summary> <a href="https://plus.google.com/+MortenSj%C3%B8gren/posts/Mif9jGBmR8G">performance is not a problem</a></li>
+							<li>100% CSS Gradients</li>
+							<li>Hyphenation -vendor-prefix</li>
+							<li>3d Transforms</li>
+							<li>CSS Animations</li>
+							<li>Border-images (> IE10)</li>
+							<li>Border-radius</li>
+							<li>Box-shadow</li>
+							<li>HSL(a) RGB(a)</li>
+							<li>Mulitple Backgrounds</li>
+							<li>Multi-column layouts -vendor-prefix</li>
+							<li>nth-child, nth-of-type</li>
+							<li>Text-shadow</li>
+							<li>CSS Transforms</li>
+							<li>CSS Transitions</li>
+							<li>Flex-box (sorta)</li>
+							<li>Font feature settings</li>
+							<li>REM units</li>
+							<li>Viewport units</li>
+							<li>::selection pseudo element</li>
+							<li>pointer events ( > IE10)</li>
+							<li>user-select: none</li>
+							<li></li>
+						</ul>
+					</section>
+					<section>
+						<h2>Javascript</h2>
+						<ul data-columns>
+							<li>Web Workers</li>
+							<li>Web Sockets</li>
+							<li>Typed Arrays</li>
+							<li>requestAnimationFrame</li>
+							<li>pageVisibility</li>
+							<li>Navigation Timing</li>
+							<li>matchMedia</li>
+							<li>matches()</li>
+							<li>IndexedDB (!iOS)</li>
+							<li>Geolocation</li>
+							<li>Fullscreen API ( > IE 10)</li>
+							<li>FileReader API</li>
+							<li>File API</li>
+							<li>Blob URLs</li>
+							<li>Blob constructing</li>
+						</ul>
+					</section>
+					<section>
+						<h2>DOM</h2>
+						<ul>
+							<li>getElementByClassname</li>
+							<li>getComputedStyle</li>
+							<li>script defer</li>
+							<li>script async</li>
+							<li>XMLHttpRequest 2</li>
+							<li>ClassList</li>
+							<li>Mutation Observer (> IE 10)</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h2>Here's the thing...</h2>
+					<ul>
+						<p class="fragment">Firefox and Chrome have 6 week rapid release cycles.</p>
+						<p class="fragment">Safari and IE have had a major release yearly since 2011.</p>
+						<p class="fragment">Windows XP is being sunset <a href="http://windows.microsoft.com/en-us/windows/end-support-help?ocid=XPEOS_SEM_google_FAM_WINDOWS_BRAND_NULL_LEARN_windows%20xp&wt.mc_id=XPEOS_SEM_google_FAM_WINDOWS_BRAND_NULL_LEARN_windows%20xp">April 8, 2014</a>.</p>
+						<p class="fragment">Worldwide XP usage dropped <a href="http://www.informationweek.com/software/operating-systems/windows-xp-wont-go-quietly/d/d-id/1113331">73.4%</a> during 2013</p>
+						<p class="fragment">Internally...</p>
+						<ul>
+							<li class="fragment">IE 8 fell from a peak of 10.9% of all unique daily vists in February to 4.3% in December. A drop of <strong>63%</strong></li>
+							<li class="fragment">IE 9 went from 17.6% in January to 4.7% in December. A drop of <strong>73%</strong>.</li>
+						</ul>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h2>Stop spinnig your wheels.</h2>
+					</section>
+					<section>
+						<small>Anecdotally...</small>
+						<p class="fragment">A small project can take up to two months</p>
+						<p class="fragment">A medium project -- anywhere between two - six months.</p>
+						<p class="fragment">A large project can take six months or more.</p>
+					</section>
+					<section>
+						<h2>By the time you're done with a small project...</h2>
+						<p>Firefox and Chrome have released at least one major version.</p> 
+						<p>Safari and IE are preparing for beta releases of their browsers.</p>
+					</section>
+					<section>
+						<h2>During the course of a medium size project</h2>
+						<p>Firefox and Chrome will release anywhere from one - four major releases.</p>
+						<p>Safari/IE will be well into their beta period.</p>
+					</section>
+					<section>
+						<h2>During a large project...</h2>
+						<p>You ar likely to see a major release from Safari and IE before your project launches.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Stop coding for the past!</h2>
+						<h3>Start coding for the future!</h3>
+						<ul>
+							<li class="fragment">Code to standards regardless of support</li>
+							<li class="fragment">Conditionally Polyfill where support lacks</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Code to standards</h2>
+						<p>Browsers are in an arms race to implement standards as soon as the spec is stable.</p>
+						<p class="fragment">If the feature you need isn't available across all your supported browsers yet, it soon will be.</p>
+					</section>
+					<section>
+						<h2>Conditionally Polyfill</h2>
+						<p>If your feature doesn't exist in all supported browsers, there is almost certainly a <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">polyfill</a></p>
+						<figure class="fragment">
+							
+						<figcaption>If there isn't a polyfill, it's probably fairly easy to make one.</figcation>
+						<pre><code>
+if (!Array.prototype.forEach) {
+  Array.prototype.forEach = function(fn, thisArg) {
+    "use strict";
+    if (typeof fn !== "function")
+      throw new TypeError();
+
+    for (var i = 0, len = this.length; i < len; i++) {
+        fn.call(thisArg, this[i], i, this);
+    }
+  };
+}
+</code></pre>
+						</figure>
+
+						<p class="fragment">Just make sure you test for the feature first. Don't load a polyfill if the browser supports the feature.</p>
+					</section>
+					<section>
+						<h2>Burden the aged</h2>
+						<small>Why would you burn time developing for the lowest common denominator when that target browser will be even less relevant when you launch than it was when you began?</small>
+						<ul>
+							<li class="fragment">Older browsers are getting less used, not more.</li>
+							<li class="fragment">Code you write for the oldest browsers becomes obsolete the soonest &mdash; make that the throw away code, not your whole application.</li>
+							<li class="fragment">Build for the standard, polyfill or load fallbacks for the rest.</li>
+							<li class="fragment">Don't load what you don't need.</li>
+						</ul>
+
+					</section>
+				</section>
+
+				<section>
+					<h2>THE END</h2>
+					<p>BY Cory Brown / <a href="github.com/uniqname">github.com/uniqname</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
