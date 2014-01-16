@@ -28,6 +28,11 @@
 			[data-columns] {
 				-webkit-column-count: 2;
 			}
+			small { vertical-align: baseline!important;}
+			summary, details small { display: inline!important; outline: none; }
+			summary::-webkit-details-marker { display: none; }
+			details ^ #details-content { display: inline; }
+			details ^ #details-content::before { content: '\2014'; }
 		</style>
 
 		<!-- For syntax highlighting -->
@@ -55,7 +60,7 @@
 							<div class="column">
 								<h2>SVG</h2>
 								<ul>
-									<li><a href="//caniuse.com/svg">Basic SVG</a></li>
+									<lhttps://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&ved=0CDQQFjAB&url=http%3A%2F%2Fcss-tricks.com%2Fsnippets%2Fhtml%2Fglyphs%2F&ei=xhPYUviDDovpoATAr4Jw&usg=AFQjCNGgiCAHshhJm-DYbxfnkgmsSfZJwg&sig2=PZ_Qmu1vtUydcY16uVccKA&bvm=bv.59568121,d.cGUi><a href="//caniuse.com/svg">Basic SVG</a></li>
 									<li><a href="//caniuse.com/svg-html5">Inline SVG</a></li>
 									<li><a href="//caniuse.com/svg-html">SVG Effects on HTML objects</a></li>
 									<li><a href="//caniuse.com/svg-filters">SVG Filters</a></li>
@@ -156,13 +161,14 @@
 						<ul>
 							<li>Contenteditable</li>
 							<li>Input placeholder</li>
-							<li>Form Validation (<input id="validation" type="email" />) 
+							<li>Form Validation (<input id="validation" type="email" placeholder="a.valid@email.addr" />) 
 							<style> 
 							.html style[contenteditable] { display: inline-block; font: .5em/1 monospace; padding: 1em; background: #333;} 
-							.html input { font-size: 1em; outline: none; border: none; background: #999; border-radius: .25em; padding: .25em; transition: .25s all;}
+							.html input[type="email"] { background: #999; }
+							.html input { font-size: 1em; outline: none; border: none; border-radius: .25em; padding: .25em; transition: .25s all;}
 							</style>
 							<style contenteditable>
-							.html input { background-color: red; color: #fff;} 							}
+							.html input:invalid { background-color: red; color: #fff;} 							}
 							</style> </li>
 							</code></pre>
 							<li>Offline access (cache manifest)</li>
@@ -202,20 +208,16 @@
 									  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
 									  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px       
 									);}
-						</style>
-						<style scoped>
-							summary { display: inline-block; }
-							summary::-webkit-details-marker { display: none; }
-							details ^ #details-content { display: inline-block; }
-							section:before, section:after {
+							
+							.css section:before, section:after {
 								position: absolute; top:0; bottom: 0; left: 0; right: 0; content: ''; z-index: -1;
 							}
-							section { text-shadow: 1px 1px 2px #333;}
-							section:before { background: hsl(34, 53%, 82%); }
-							section:after { -webkit-filter: blur(20px); }
+							.css section { text-shadow: 1px 1px 2px #333;}
+							.css section:before { background: hsl(34, 53%, 82%); }
+							.css section:after { -webkit-filter: blur(20px); }
 						</style>
 						<h2>CSS</h2>
-						<ul>
+						<ul data-columns>
 							<li><details><summary>calc()</summary> <a href="https://plus.google.com/+MortenSj%C3%B8gren/posts/Mif9jGBmR8G">performance is not a problem</a></li>
 							<li>100% CSS Gradients</li>
 							<li>Hyphenation -vendor-prefix</li>
@@ -284,14 +286,14 @@
 						<p class="fragment">Worldwide XP usage dropped <a href="http://www.informationweek.com/software/operating-systems/windows-xp-wont-go-quietly/d/d-id/1113331">73.4%</a> during 2013</p>
 						<p class="fragment">Internally...</p>
 						<ul>
-							<li class="fragment">IE 8 fell from a peak of 10.9% of all unique daily vists in February to 4.3% in December. A drop of <strong>63%</strong></li>
-							<li class="fragment">IE 9 went from 17.6% in January to 4.7% in December. A drop of <strong>73%</strong>.</li>
+							<li class="fragment"><details><summary>IE 8 dropped <strong>63%</strong> in 2013 to 4.3% udv</summary><small>IE 8 peaked in February at 10.9% of all unique daily vists and fell to 4.3% in December.</small></details></li>
+							<li class="fragment"><details><summary>IE 9 dropped <strong>73%</strong> in 2013 to 4.7% udv</summary> <small>IE 9 peaked at 17.6% in January and fell 4.7% in December.</small></details></li>
 						</ul>
 					</ul>
 				</section>
 				<section>
 					<section>
-						<h2>Stop spinnig your wheels.</h2>
+						<h2>Stop spinning your wheels.</h2>
 					</section>
 					<section>
 						<small>Anecdotally...</small>
