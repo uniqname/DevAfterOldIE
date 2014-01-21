@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Life after "old" IE</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -192,8 +192,8 @@
 					</section>
 					<section data-state="css">
 						<style>
-							.css body,
-							.css .present:after { background-color: hsl(34, 53%, 82%);
+							.css-bg-pattern,
+							.css-bg-pattern .present:after { background-color: hsl(34, 53%, 82%);
 									background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,                  
 									  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
 									  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,                
@@ -209,12 +209,12 @@
 									  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px       
 									);}
 							
-							.css section:before, section:after {
+							 section.present:before, section.present:after {
 								position: absolute; top:0; bottom: 0; left: 0; right: 0; content: ''; z-index: -1;
 							}
-							.css section { text-shadow: 1px 1px 2px #333;}
-							.css section:before { background: hsl(34, 53%, 82%); }
-							.css section:after { -webkit-filter: blur(20px); }
+							.css-bg-pattern section { text-shadow: 1px 1px 2px #333;}
+							.css-bg-pattern section:before { background: hsl(34, 53%, 82%); }
+							.css-bg-pattern section:after { -webkit-filter: blur(20px); }
 						</style>
 						<h2>CSS</h2>
 						<ul data-columns>
@@ -240,10 +240,10 @@
 							<li>::selection pseudo element</li>
 							<li>pointer events ( > IE10)</li>
 							<li>user-select: none</li>
-							<li></li>
+							<li><button class="css-bg-pattern-demo">Demo</button></li>
 						</ul>
 					</section>
-					<section>
+					<section data-state="js">
 						<h2>Javascript</h2>
 						<ul data-columns>
 							<li>Web Workers</li>
@@ -278,6 +278,7 @@
 				</section>
 
 				<section>
+
 					<h2>Here's the thing...</h2>
 					<ul>
 						<p class="fragment">Firefox and Chrome have 6 week rapid release cycles.</p>
@@ -407,6 +408,12 @@ if (!Array.prototype.forEach) {
 				]
 			});
 
+		</script>
+
+		<script>
+			document.querySelector('.css-bg-pattern-demo').addEventListener( 'click', function() {
+				document.body.classList.toggle('css-bg-pattern')
+			} );
 		</script>
 
 	</body>
